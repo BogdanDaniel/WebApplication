@@ -10,7 +10,8 @@ imports: [
             pathMatch: 'full'
         }
     ])
-]
+],
+exports: [RouterModule]
 })
 
 export class AppRoutingModule {
