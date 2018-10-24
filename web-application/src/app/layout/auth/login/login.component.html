@@ -3,20 +3,35 @@
       <div class="logo">
           <img src="../../../../assets/images/sale.png" alt="WebApplication">
       </div>
+      <form 
+      (ngSubmit)="onSubmit()"
+      [formGroup]="loginFormGroup"
+      autocomplete="off">
   <div class="login-container">
     <div class="ui-g-12">
         <div class="ui-g-12 pumpkin">
             <img src="../../../../assets/images/pumpkin.png" alt="pumpkin">
             </div>
-        <div class="ui-g-12">
+        <div class="ui-g-12 form-group">
             <span class="ui-float-label">
-                <input id="username" type="text" size="30" pInputText autocomplete="off"> 
+                <input id="username"
+                 type="text"
+                 size="30"
+                 formControlName="username"
+                 pInputText 
+                 autocomplete="off"> 
                 <label for="username">Username</label>
             </span>
         </div>
-        <div class="ui-g-12">
+        <div class="ui-g-12 form-group">
           <span class="ui-float-label">
-              <input id="password" type="password" size="30" pInputText autocomplete="off"> 
+              <input 
+              id="password" 
+              type="password" 
+              size="30" 
+              formControlName="password"
+              pInputText 
+              autocomplete="off"> 
               <label for="password">Password</label>
           </span>
       </div>   
@@ -25,8 +40,8 @@
         <div class="login-submit">
             <button 
             class="btn btn-login" 
-            type="button" 
-            (click) = "onSubmit()" >Login</button>
+            type="submit" 
+             >Login</button>
             <span class="blood">
                 </span>
         </div>
@@ -40,5 +55,6 @@
             </span>
         </div> -->
   </div>
+</form>
 </div>
 </div>

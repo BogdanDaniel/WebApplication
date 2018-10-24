@@ -92,21 +92,21 @@ transform: translate(297px, 73px);
     color: #c33409;
 }
 
-// .login-success {
-//    animation: loginSuccess 1s 1 linear 0s;
-// }
+.login-success {
+   animation: loginSuccess 1s 1 linear 0s;
+}
 
-// @keyframes loginSuccess {
-//  0% {
-//     margin: 100px auto 25px;
-//     transform: rotate(270deg); 
+@keyframes loginSuccess {
+ 0% {
+    margin: 100px auto 25px;
+    transform: rotate(270deg); 
 
-//  }
-//  100% {
-//     margin: 0 auto 25px;
+ }
+ 100% {
+    margin: 0 auto 25px;
 
-//  }
-// }
+ }
+}
 
 // .blood {
 //     width: 10px;
