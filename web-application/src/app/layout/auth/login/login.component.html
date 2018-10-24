@@ -1,38 +1,44 @@
 <div class="ui-g ui-fluid">
-  <div class="login-box">
+  <div class="login-box"  [ngClass] = "{'login-success': success}" >
       <div class="logo">
           <img src="../../../../assets/images/sale.png" alt="WebApplication">
       </div>
   <div class="login-container">
     <div class="ui-g-12">
-        <!-- <div class="ui-g-12">
-            <span>
-                <label>
-                    Web Application
-                </label>
-            </span>
-        </div> -->
         <div class="ui-g-12 pumpkin">
             <img src="../../../../assets/images/pumpkin.png" alt="pumpkin">
             </div>
         <div class="ui-g-12">
             <span class="ui-float-label">
-                <input id="username" type="text" size="30" pInputText> 
+                <input id="username" type="text" size="30" pInputText autocomplete="off"> 
                 <label for="username">Username</label>
             </span>
         </div>
         <div class="ui-g-12">
           <span class="ui-float-label">
-              <input id="password" type="password" size="30" pInputText> 
+              <input id="password" type="password" size="30" pInputText autocomplete="off"> 
               <label for="password">Password</label>
           </span>
       </div>   
     </div>
     <div class="ui-g-12">
         <div class="login-submit">
-            <button class="btn btn-login" type="button">Login</button>
+            <button 
+            class="btn btn-login" 
+            type="button" 
+            (click) = "onSubmit()" >Login</button>
+            <span class="blood">
+                </span>
         </div>
+       
     </div>
+       <!-- <div class="ui-g-12">
+            <span class="logo-name">
+                
+                    Web Application
+               
+            </span>
+        </div> -->
   </div>
 </div>
 </div>
