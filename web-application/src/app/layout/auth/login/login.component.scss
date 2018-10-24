@@ -1,12 +1,39 @@
 @import "../../../shared/styles/variables.scss";
-
 .login-box {
+    position: relative;
+    animation: dropBox 2s ease-in 1;
+    
+}
+
+@keyframes dropBox {
+    0% {
+        margin: 0 auto 25px;
+        transform:rotateZ(0deg);
+    }
+    25% {
+       transform:rotateZ(10deg);
+       }
+   50% {
+    transform:rotateZ(-10deg);
     margin: 100px auto 25px;
 }
+   75% {
+        transform:rotateZ(5deg);
+   }
+
+   100% {
+        transform: rotateZ(0deg);
+   }
+}
+.login-box {
+     margin: 100px auto 25px;
+ }
+
 .login-container {
     width: 300px;
-    height: 300px;
+    height: 400px;
     border: 1px solid grey;
+    border-radius: 5px;
 }
 
 label {
@@ -21,5 +48,30 @@ label {
 .logo img {
 width: 100px;
 height: 100px;
-transform: translate(-74px, 75px);
+transform: translate(297px, 73px);
 }
+.pumpkin img {
+    width: 100px;
+    height: 100px;
+    transform: translate(85%);
+    
+}
+.pumpkin {
+    animation: shakePumpkin 3s infinite linear 0s;
+}
+
+@keyframes shakePumpkin {
+    25% {
+        transform: rotateZ(10deg);
+   }
+   50% {
+      transform: rotateZ(-10deg);
+}
+   75% {
+        transform:rotateZ(10deg);
+   }
+   100% {
+        transform: rotateZ(0deg);
+   }
+}
+
