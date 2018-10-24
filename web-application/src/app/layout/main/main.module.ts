@@ -6,11 +6,13 @@ import { ContentComponent } from '../content/content.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { MainRoutingModule } from './main.routes';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    SharedModule
   ],
   declarations: [
     MainComponent,
