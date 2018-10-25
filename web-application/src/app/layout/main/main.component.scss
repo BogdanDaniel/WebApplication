@@ -1,0 +1,24 @@
+@import "../../shared/styles/variables.scss";
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 1;
+    height: calc(100vh - 80px);
+}
+
+app-sidebar {
+    flex: 0 1 3rem;
+    display: flex;
+    height: inherit;
+  }
+
+  app-content {
+    height: inherit;
+    flex: 1;
+    z-index: 1;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+  }
