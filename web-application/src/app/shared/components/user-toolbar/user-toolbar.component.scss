@@ -1,12 +1,21 @@
 @import "../../styles/variables.scss";
+
+.user-profile {
+  flex: 30%;
+  display: flex;
+  height: inherit;
+}
 .user-logo {
-    width: 100%;
+  flex: 70%;
+  display: flex;
+  width: 100%;
+  height: inherit;
 }
 
 .user-logo img {
-    float: right;
-    width: 30px;
-    height: 30px;
+  float: right;
+  width: 30px;
+  height: 30px;
 }
 
 :host ::ng-deep .ui-dropdown label.ui-dropdown-label{
