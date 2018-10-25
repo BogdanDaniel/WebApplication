@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserToolbarComponent implements OnInit {
   profileOptions: any;
+  option: any;
   constructor() {
   this.profileOptions = [
     {name: 'Profile'},
@@ -17,5 +18,7 @@ export class UserToolbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onSubmit() {
+    console.log("works");
+  }
 }
