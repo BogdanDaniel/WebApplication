@@ -7,12 +7,14 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 import { MainRoutingModule } from './main.routes';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { SharedModule } from '../../shared/shared.module';
+import { AdminModule } from '../../modules/admin/admin.module';
 
 @NgModule({
   imports: [
     CommonModule,
     MainRoutingModule,
-    SharedModule
+    SharedModule,
+    AdminModule
   ],
   declarations: [
     MainComponent,
