@@ -1,5 +1,20 @@
 <div class="sidebar">
-  <a routerLink="/admin" routerLinkActive="active">
+  <!-- <a routerLink="/admin" routerLinkActive="active">
     <span class="menu-item">Admin</span>
-  </a>
+  </a> -->
+ 
+      <a class="menu-icon">
+        <div class="menu-logo" [ngClass]="{'menu-show': clicked, 'menu-hide': !clicked}">
+            <img src="../../../assets/images/menu.png" (click)="handleMenu()">
+        </div>
+      </a>
+    
+ 
+
+  <!-- <p-accordion>
+    <p-accordionTab>
+       Content 1
+    </p-accordionTab>
+   
+</p-accordion> -->
 </div>

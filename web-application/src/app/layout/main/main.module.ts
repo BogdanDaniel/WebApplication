@@ -8,13 +8,15 @@ import { MainRoutingModule } from './main.routes';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { SharedModule } from '../../shared/shared.module';
 import { AdminModule } from '../../modules/admin/admin.module';
+import {AccordionModule} from 'primeng/accordion';
 
 @NgModule({
   imports: [
     CommonModule,
     MainRoutingModule,
     SharedModule,
-    AdminModule
+    AdminModule,
+    AccordionModule
   ],
   declarations: [
     MainComponent,
