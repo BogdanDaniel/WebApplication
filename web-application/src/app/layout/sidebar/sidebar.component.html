@@ -2,19 +2,17 @@
   <!-- <a routerLink="/admin" routerLinkActive="active">
     <span class="menu-item">Admin</span>
   </a> -->
- 
-      <a class="menu-icon">
-        <div class="menu-logo">
-            <img src="../../../assets/images/menu.png" (click)="handleMenu()">
-        </div>
-      </a>
-    
- 
 
-  <!-- <p-accordion>
-    <p-accordionTab>
-       Content 1
-    </p-accordionTab>
-   
-</p-accordion> -->
+  <a class="menu">
+    <div class="menu-logo">
+      <img src="../../../assets/images/menu.png" (click)="handleMenu()">
+    </div>
+    <div class="menu-items" *ngIf="clicked">
+      <a class="menu-item" *ngFor="let item of items" (click)="handleNavigate(item)">
+       <span>{{item}}</span>
+      </a>
+    </div>
+  </a>
+
+
 </div>

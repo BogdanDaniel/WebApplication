@@ -1,5 +1,5 @@
 <app-header></app-header>
 <section class="main-wrapper">
-    <app-sidebar (onMenuSelect)="handleMenuSelect($event)" [class.sidebar-hide]="showMenu | async"></app-sidebar>
+    <app-sidebar (onMenuSelect)="handleMenuSelect($event)" [class.sidebar]="showMenu | async"></app-sidebar>
     <app-content></app-content>
 </section>

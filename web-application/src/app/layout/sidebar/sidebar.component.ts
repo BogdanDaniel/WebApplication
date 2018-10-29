@@ -1,4 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
+import { lowerCase } from 'lodash';
 
 
 @Component({
@@ -7,9 +9,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  items: any = ['Admin', 'User'];
+  items: any = ['Admin', 'Dashboard'];
   clicked = false;
-  constructor() { }
+  constructor(private router:Router) { }
   @Output() onMenuSelect = new EventEmitter<boolean>();
   ngOnInit() {
   }
@@ -17,6 +19,11 @@ export class SidebarComponent implements OnInit {
   handleMenu() {
     this.clicked = !this.clicked;
     this.onMenuSelect.emit(this.clicked);
+  }
+
+  handleNavigate(item) {
+    item = lowerCase(item);
+    this.router.navigate([`/${item}`])
   }
 
 }
