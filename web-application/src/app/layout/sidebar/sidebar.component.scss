@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
-    align-items: flex-start;
+   // align-items: flex-start;
    // background-image: linear-gradient( #f9a186, white);
 }
 
@@ -20,17 +20,14 @@
     display: flex;
     height: 40px;
     background: #31AF91;
+    cursor: pointer;
    // background-image: linear-gradient(to left, white , #31AF91);
-    justify-content: flex-start; 
+    justify-content: flex-end; 
     box-shadow: -1px 1px 2px #31AF91;
 }
-.menu-show {
-    justify-content: flex-end;
-}
 
-.menu-hide {
-    justify-content: flex-start;
-}
+
+
 // .menu-item {
 //   flex: 80%;
 //   display: flex;
