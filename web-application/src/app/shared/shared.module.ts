@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserToolbarComponent } from './components/user-toolbar/user-toolbar.component';
 import {DropdownModule} from 'primeng/dropdown';
+import { UserSettingComponent } from './components/user-setting/user-setting.component';
 
 @NgModule({
   imports: [
@@ -9,7 +10,8 @@ import {DropdownModule} from 'primeng/dropdown';
     DropdownModule
   ],
   declarations: [
-    UserToolbarComponent
+    UserToolbarComponent,
+    UserSettingComponent
   ],
   exports: [UserToolbarComponent]
 })
