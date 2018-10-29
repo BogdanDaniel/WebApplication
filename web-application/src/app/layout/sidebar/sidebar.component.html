@@ -9,10 +9,14 @@
     </div>
     <div class="menu-items" *ngIf="clicked">
       <a class="menu-item" *ngFor="let item of items" (click)="handleNavigate(item)">
-       <span>{{item}}</span>
+        <span>{{item}}</span>
       </a>
     </div>
   </a>
-
+  <div class="subMenu-items" *ngIf="selectedItem == 'Admin'">
+      <a class="subMenu-item" *ngFor="let item of admin">
+        {{item}}
+      </a>
+    </div>
 
 </div>

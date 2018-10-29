@@ -10,6 +10,8 @@ import { lowerCase } from 'lodash';
 })
 export class SidebarComponent implements OnInit {
   items: any = ['Admin', 'Dashboard'];
+  admin: any = ['User-setting'];
+  selectedItem: any;
   clicked = false;
   constructor(private router:Router) { }
   @Output() onMenuSelect = new EventEmitter<boolean>();
@@ -22,6 +24,7 @@ export class SidebarComponent implements OnInit {
   }
 
   handleNavigate(item) {
+    this.selectedItem = item;
     item = lowerCase(item);
     this.router.navigate([`/${item}`])
   }
