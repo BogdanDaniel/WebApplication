@@ -1,8 +1,10 @@
 @import "../../shared/styles/variables.scss";
 .sidebar {
     height: inherit;
-    flex: 1;
+    flex: 0 1 15rem;
     display: flex;
+    justify-content: flex-start;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.9);
     flex-wrap: wrap;
     flex-flow: row;
 }
@@ -18,9 +20,6 @@
     background: #31AF91;
     cursor: pointer;
     justify-content: flex-end; 
-    // border-bottom: 1px solid grey;
-    // border-style: inset;
-    // box-shadow: -1px 1px 2px #31AF91;
 }
 
 .menu-item {
@@ -28,24 +27,33 @@
     display: flex;
     background: #31AF91;
     justify-content: center;
-    // border-bottom: 1px solid $input-color;
-    // box-shadow: 0px 3px 2px #31AF91;
     cursor: pointer;
+    height: 40px;
 }
-.subMenu-items a {
-    flex: 1 ;
-    
-}
+
 .menu-item span {
     font-size: 18px;
     font-family:  "Trebuchet MS", Helvetica, sans-serif;
     color: #fff;
+    padding-top: 5px;
 }
-
-
 
 .menu img {
     width: 40px;
     height: 40px;
     background: none;
+}
+app-sidebar-menu {
+    height: inherit;
+    margin-top: 40px;
+    display: flex;
+    transition: flex 0.5s;
+}
+
+.sidebar-menu {
+    height: inherit;
+    margin-top: 40px;
+    display: flex;
+    flex: 0 1 15rem;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.9);
 }

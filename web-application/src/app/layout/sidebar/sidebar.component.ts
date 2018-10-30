@@ -1,7 +1,12 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { lowerCase } from 'lodash';
+import { BehaviorSubject } from 'rxjs';
 
+interface SubMenu {
+  clicked: boolean;
+  item: string;
+}
 
 @Component({
   selector: 'app-sidebar',
@@ -10,12 +15,16 @@ import { lowerCase } from 'lodash';
 })
 export class SidebarComponent implements OnInit {
   items: any = ['Admin', 'Dashboard'];
-  admin: any = ['User-setting'];
-  selectedItem: any;
+  item: any[];
+  showSubMenu = new BehaviorSubject<any>(false);
   clicked = false;
+  clickedSubMenu = false;
+  subMenuDetails: SubMenu;
   constructor(private router:Router) { }
   @Output() onMenuSelect = new EventEmitter<boolean>();
+
   ngOnInit() {
+    this.subMenuDetails = {'clicked': null, 'item': null};
   }
 
   handleMenu() {
@@ -24,9 +33,10 @@ export class SidebarComponent implements OnInit {
   }
 
   handleNavigate(item) {
-    this.selectedItem = item;
     item = lowerCase(item);
-    this.router.navigate([`/${item}`])
+    this.clickedSubMenu = !this.clickedSubMenu;
+   if(this.items == 'admin') 
+this.item.push(this.items[0]) ;
   }
 
 }

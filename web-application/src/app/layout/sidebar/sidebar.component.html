@@ -13,10 +13,14 @@
       </a>
     </div>
   </a>
-  <div class="subMenu-items" *ngIf="selectedItem == 'Admin'">
-      <a class="subMenu-item" *ngFor="let item of admin">
-        {{item}}
-      </a>
-    </div>
-
 </div>
+
+<app-sidebar-menu *ngIf="clickedSubMenu" [class.sidebar-menu]="true" [subMenuDetails]="item">
+</app-sidebar-menu>
+
+
+<!-- <div class="subMenu-items" *ngIf="selectedItem == 'Admin'">
+  <a class="subMenu-item" *ngFor="let item of admin">
+    {{item}}
+  </a>
+</div> -->

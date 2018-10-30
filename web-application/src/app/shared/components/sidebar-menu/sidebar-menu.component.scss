@@ -1,0 +1,20 @@
+.subMenu {
+    display: flex;
+    flex: 0 1 15rem;
+}
+
+.subMenuItem {
+    flex: 1;
+    display: flex;
+    background: #31AF91;
+    justify-content: center;
+    cursor: pointer;
+    height: 40px;
+}
+
+.subMenuItem span {
+    font-size: 18px;
+    font-family:  "Trebuchet MS", Helvetica, sans-serif;
+    color: #fff;
+    padding-top: 5px;
+}
