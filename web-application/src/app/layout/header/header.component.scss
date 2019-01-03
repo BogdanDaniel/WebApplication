@@ -2,7 +2,6 @@
 
 .header {
     height: $header-height;
-    z-index: 1000;
     box-sizing: border-box;
     background-color: #f5f6f7;
     box-shadow: 0px 1px 3px #333;
@@ -27,7 +26,7 @@ nav ul{
 nav a{
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 8px;
 }
 
 @media only screen and (min-width: 1230px) {
@@ -47,6 +46,16 @@ nav a{
     color: #4d4f52;
     text-transform: uppercase;
     font: 600 15px/40px Metric,Arial,Helvetica,sans-serif;
+
+}
+.item:focus, .item:hover {
+    cursor: pointer;
+    color: #3195c1;
+    border-bottom: 3px solid transparent;
+    border-bottom-color: #3195c1;
+}
+.item:focus::before, .item:hover::before {
+   
 }
 
 .item-button {
@@ -63,11 +72,14 @@ nav a{
     font: 600 15px/40px Metric,Arial,Helvetica,sans-serif;
 }
 
-.item:focus, .item:hover {
+
+.item-button:focus, .item-button:hover {
     cursor: pointer;
     color: #000;
     background: #32caff;
 }
+
+
 
 .logo {
     flex: 20%;
