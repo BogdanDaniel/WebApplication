@@ -1,0 +1,13 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    height: calc(100vh - 60px);
+}
+.image-wrapper {
+
+}
+.image-wrapper  img{
+    width: 100%;
+}
