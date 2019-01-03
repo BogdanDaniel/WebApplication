@@ -9,6 +9,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 import { SharedModule } from '../../shared/shared.module';
 import { AdminModule } from '../../modules/admin/admin.module';
 import {AccordionModule} from 'primeng/accordion';
+import { HomeComponent } from '../home/home.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import {AccordionModule} from 'primeng/accordion';
     HeaderComponent,
     ContentComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    HomeComponent
   ]
 })
 export class MainModule { }
