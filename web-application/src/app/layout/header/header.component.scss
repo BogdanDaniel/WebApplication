@@ -49,7 +49,7 @@ nav ul.social {
 
 .item {
     display: inline-block!important;
-    padding: 8px;
+    padding: 9px;
     color: #4d4f52;
     text-transform: uppercase;
     font: 600 15px/40px Metric,Arial,Helvetica,sans-serif;
@@ -58,16 +58,11 @@ nav ul.social {
 .item:focus, .item:hover {
     cursor: pointer;
     color: #3195c1;
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
     border-bottom-color: #3195c1;
 }
 .item:focus::before, .item:hover::before {
    
-}
-
-.social-item {
-    width: 144px;
-    height: 40px;
 }
 
 .item-button {
@@ -92,6 +87,17 @@ nav ul.social {
     cursor: pointer;
     color: #000;
     background: #32caff;
+}
+
+.list-item-icon {
+    flex: 1 !important;
+}
+
+.list-item-button {
+    flex: 4 !important;
+}
+.icon {
+    cursor: pointer;
 }
 
 
