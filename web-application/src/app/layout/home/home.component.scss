@@ -5,6 +5,7 @@
     align-content: stretch;
     height: calc(100vh - 60px);
 }
+
 .image-wrapper {
    position: absolute;
 }
@@ -16,9 +17,7 @@
     position: absolute;
     width: 50%;
     left: 25%;
-    top: 25%;
-    
-    // margin: 300px auto 300px;
+    top: 15%;
 }
 
 h1 {
@@ -35,4 +34,24 @@ h2 {
     font-family: Arial,Helvetica,sans-serif;
     font-weight: 200;
     font-size: 31px;
+}
+
+.productBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    flex: 1;
+    height: 400px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
+}
+.general-content-box {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    flex: 1
 }

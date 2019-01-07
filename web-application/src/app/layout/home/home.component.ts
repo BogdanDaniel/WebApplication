@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  private products: any = [
+    {
+      type: 'portfolio'
+    },
+    {
+      type: 'company'
+    }
+  ]
   constructor() { }
 
   ngOnInit() {

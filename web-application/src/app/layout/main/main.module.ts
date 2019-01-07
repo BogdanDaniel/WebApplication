@@ -10,6 +10,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { AdminModule } from '../../modules/admin/admin.module';
 import {AccordionModule} from 'primeng/accordion';
 import { HomeComponent } from '../home/home.component';
+import { ProductBoxComponent } from '../home/product-box/product-box.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { HomeComponent } from '../home/home.component';
     ContentComponent,
     SidebarComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    ProductBoxComponent
   ]
 })
 export class MainModule { }

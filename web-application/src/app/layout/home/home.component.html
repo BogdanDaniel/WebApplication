@@ -4,9 +4,12 @@
         <img src="../../../assets/images/backimg2.jpg" height="500">
     </div>
     <div class="general-content-box">
+        <div class="content">
             <h1>This is HEADER</h1>
             <h2>This is subHeader</h2>
-        <div class="productBox">
+            <div class="productBox">
+                <app-product-box class="product" *ngFor="let product of products" [productType]="product.type"></app-product-box>
+            </div>
         </div>
     </div>
 </section>
