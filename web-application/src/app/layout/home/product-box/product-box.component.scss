@@ -3,10 +3,63 @@
     width: 100%;
     background-color: white;
 }
-h1 {
-    padding-left: 15px;
-    color: black;
-    font-family: Arial,Helvetica,sans-serif;
+h5 {
+   // padding-left: 15px;
+    text-align: center;
+    margin-top: 25px;
+    color: #08a9e0;
+    font-family: Metric;
     font-weight: 200;
-    font-size: 81px;
+   // font-size: 24px;
 }
+
+h2 {
+    // padding-left: 15px;
+     text-align: center;
+   //  margin-top: 25px;
+     color: black;
+     font-family: Metric;
+     font-weight: 200;
+    // font-size: 24px;
+ }
+
+ p {
+    text-align: center;
+    font-family: Metric;
+    font-weight: 200;
+    font-size: 18px!important;
+    color: #555!important;
+ }
+.product-command-buttons {
+    width: 100% ;
+    max-width: 270px;
+    margin: auto;
+    padding-top: 20px; 
+}
+ .moreInfo_btn {
+    display: block;
+    color: white!important;
+   // padding: .44em .9em .52em;
+    margin-bottom: 10px;
+    background-color:  #e74b3c;
+    border-color: #e74b3c;
+    border-radius: 2px;
+    font-family: Metric,Arial,Gadget,sans-serif;
+    font-weight: 400;
+    letter-spacing: -.025em;
+    font-size: 21px!important;
+ }
+
+ .getStarted_btn {
+    display: block;
+    color: #555!important;
+   // padding: .44em .9em .52em;
+    background-color: white;
+    border-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+    font-family: Metric,Arial,Gadget,sans-serif;
+    font-weight: 400;
+    letter-spacing: -.025em;
+    font-size: 21px!important;
+ }

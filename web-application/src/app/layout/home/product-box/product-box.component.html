@@ -1,3 +1,15 @@
 <div class="product">
-    <h1> {{productType}}</h1>
+    <h5 *ngIf="productType === 'portfolio'">Designed for users</h5>
+    <h5 *ngIf="productType === 'company'">Designed for companies</h5>
+    <h2>{{productType | uppercase}}</h2>
+    <p *ngIf="productType === 'portfolio'">
+        Easy to use.Professional themes. A hassle-free online portfolio. No HTML necessary. Chock-full of features.
+        Proven aphrodisiac</p>
+    <p *ngIf="productType === 'company'">
+        Easy to use. Professional themes. A hassle-free online portfolio. No HTML necessary. Chock-full of features.
+        Proven aphrodisiac</p>
+    <div class="product-command-buttons">
+        <a href="" class="btn btn-primary btn-block moreInfo_btn">More About Portfolio</a>
+        <a href="" class="btn btn-primary  btn-block getStarted_btn">Create Own Portfolio</a>
+    </div>
 </div>
