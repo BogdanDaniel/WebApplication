@@ -6,8 +6,33 @@
     height: calc(100vh - 60px);
 }
 .image-wrapper {
-
+   position: absolute;
 }
 .image-wrapper  img{
     width: 100%;
+}
+
+.general-content-box {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    
+    // margin: 300px auto 300px;
+}
+
+h1 {
+    padding-left: 15px;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 200;
+    font-size: 81px;
+}
+
+h2 {
+    padding-left: 10px;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 200;
+    font-size: 31px;
 }
