@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
       type: 'portfolio'
     },
     {
-      type: 'company'
+      type: 'presentation'
     }
   ]
   constructor() { }

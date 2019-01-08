@@ -50,6 +50,11 @@ h2 {
     font-size: 21px!important;
  }
 
+ .moreInfo_btn:hover {
+    background-color: #e32d1c;
+    border-color: #e32d1c;
+ }
+
  .getStarted_btn {
     display: block;
     color: #555!important;
@@ -63,3 +68,8 @@ h2 {
     letter-spacing: -.025em;
     font-size: 21px!important;
  }
+
+ .getStarted_btn:hover {
+   background-color: #e6e6e6;
+   border-color: #e6e6e6;
+}
